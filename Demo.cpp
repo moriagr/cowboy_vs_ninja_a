@@ -28,10 +28,10 @@ int main() {
     sushi->move(tom);
     sushi->slash(tom);
 
-    Team team_A(tom); 
-    team_A.add(new YountNinja("Yogi", Point(64,57)));
+    Team team_A(tom);
+    team_A.add(new YoungNinja("Yogi", Point(64,57)));
 
-    // Team b(tom); should throw tom is already in team a
+//     Team b(tom); should throw tom is already in team a
 
      Team team_B(sushi);
      team_B.add(new TrainedNinja("Hikari", Point(12,81)));
