@@ -23,9 +23,9 @@ namespace ariel {
     public:
         Cowboy(string name, Point location);
 
-        Cowboy();
+//        Cowboy();
 
-        ~Cowboy();
+//        ~Cowboy();
 
         void shoot(Character *other);
 
@@ -33,7 +33,7 @@ namespace ariel {
 
         bool hasboolets();
 
-        string print();
+        string print() override;
 
     };
 

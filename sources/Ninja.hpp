@@ -28,7 +28,7 @@ namespace ariel {
 
         void slash(Character *other);
 
-        string print();
+        string print() override;
 
 
     };

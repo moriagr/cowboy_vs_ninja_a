@@ -13,6 +13,8 @@ namespace ariel {
 //
 //    }
 
+//    Cowboy::~Cowboy(){}
+
     void Cowboy::shoot(Character *other) {
 
     }
