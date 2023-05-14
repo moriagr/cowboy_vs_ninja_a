@@ -2,7 +2,7 @@
 // Created by moria on 5/3/23.
 //
 
-#include "SmartTeam.hpp"
+#include "Team.hpp"
 
 namespace ariel {
     SmartTeam::SmartTeam(Character *leader_) : Team(leader_) {

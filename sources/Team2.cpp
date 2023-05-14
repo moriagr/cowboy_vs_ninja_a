@@ -2,7 +2,7 @@
 // Created by moria on 5/3/23.
 //
 
-#include "Team2.hpp"
+#include "Team.hpp"
 
 namespace ariel {
     Team2::Team2(Character *leader_):Team(leader_) {
