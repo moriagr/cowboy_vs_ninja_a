@@ -53,6 +53,8 @@ namespace ariel {
         virtual void print() const;
 
         Character *getLeader() const;
+
+        vector<Character *> getGroup() const;
     };
 }
 

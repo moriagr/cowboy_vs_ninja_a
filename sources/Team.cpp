@@ -56,7 +56,13 @@ namespace ariel {
         return 0;
     }
 
-    void Team::print() const{
+
+    vector<Character *> Team::getGroup() const{
+        return group;
+    }
+
+
+void Team::print() const{
 //        cout<<this->leader->getName()<<endl;
     }
 }
