@@ -23,9 +23,21 @@ namespace ariel {
     public:
         Cowboy(string name, Point location);
 
-//        Cowboy();
+        Cowboy();
 
-//        ~Cowboy();
+        ~Cowboy() override;
+
+        // Define copy constructor
+        Cowboy(const Cowboy& other);
+
+        // Define copy assignment operator
+        Cowboy& operator=(const Cowboy& other);
+
+        // Define move constructor
+        Cowboy(Cowboy&& other) noexcept;
+
+        // Define move assignment operator
+        Cowboy& operator=(Cowboy&& other) noexcept;
 
         void shoot(Character *other);
 

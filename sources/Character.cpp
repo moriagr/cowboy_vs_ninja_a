@@ -27,7 +27,8 @@ namespace ariel {
 
     }
 
-    // Define move assignment operator
+    Character::Character(){}
+// Define move assignment operator
     Character &Character::operator=(Character &&other) noexcept{
         return *this;
 

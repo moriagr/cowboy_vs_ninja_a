@@ -10,6 +10,8 @@ namespace ariel {
         this->y = myY;
     }
 
+    Point::Point() {}
+
     float Point::getX() const {
         return this->x;
     }

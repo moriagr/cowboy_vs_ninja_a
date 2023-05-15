@@ -9,11 +9,27 @@ namespace ariel {
 
     }
 
-//    Cowboy::Cowboy() {
-//
-//    }
+    Cowboy::Cowboy() {
 
-//    Cowboy::~Cowboy(){}
+    }
+
+    // Define copy constructor
+    Cowboy::Cowboy(const Cowboy& other){}
+
+    // Define copy assignment operator
+    Cowboy &Cowboy::operator=(const Cowboy& other){
+        return *this;
+    }
+
+    // Define move constructor
+    Cowboy::Cowboy(Cowboy&& other) noexcept{}
+
+    // Define move assignment operator
+    Cowboy &Cowboy::operator=(Cowboy&& other) noexcept{
+        return *this;
+    }
+
+    Cowboy::~Cowboy(){}
 
     void Cowboy::shoot(Character *other) {
 

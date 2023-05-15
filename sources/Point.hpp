@@ -23,6 +23,8 @@ namespace ariel {
     public:
         Point(float myX, float myY);
 
+        Point();
+
         float getX() const;
 
         float getY() const;

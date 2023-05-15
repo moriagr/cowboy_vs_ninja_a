@@ -9,6 +9,26 @@ namespace ariel {
                                                                             Character(hit_num_, location_, name_) {
     }
 
+    Ninja::Ninja(){}
+
+    Ninja::~Ninja(){}
+
+    // Define copy constructor
+    Ninja::Ninja(const Ninja& other){}
+
+    // Define copy assignment operator
+    Ninja &Ninja::operator=(const Ninja& other){
+        return *this;
+    }
+
+    // Define move constructor
+    Ninja::Ninja(Ninja&& other) noexcept{}
+
+    // Define move assignment operator
+    Ninja &Ninja::operator=(Ninja&& other) noexcept{
+        return  *this;
+    }
+
     void Ninja::move(Character *other) {
 
     }

@@ -24,11 +24,27 @@ namespace ariel {
     public:
         Ninja(int speed_, int hit_num_, string name_, Point location_);
 
+        Ninja();
+
         void move(Character *other);
 
         void slash(Character *other);
 
         string print() override;
+
+        // Define copy constructor
+        Ninja(const Ninja& other);
+
+        // Define copy assignment operator
+        Ninja& operator=(const Ninja& other);
+
+        // Define move constructor
+        Ninja(Ninja&& other) noexcept;
+
+        // Define move assignment operator
+        Ninja& operator=(Ninja&& other) noexcept;
+
+        ~Ninja() override;
 
 
     };

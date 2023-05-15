@@ -18,7 +18,7 @@ using namespace std;
 
 namespace ariel {
 
-    struct Character {
+    class Character {
     private:
         string name;
         Point location;
@@ -34,6 +34,8 @@ namespace ariel {
         virtual string print() = 0;
 
         virtual ~Character();
+
+        Character();
 
         // Define copy constructor
         Character(const Character& other);
